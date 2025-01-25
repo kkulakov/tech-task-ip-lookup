@@ -1,6 +1,10 @@
 # Backend Position Technical Task
 
-## Description
+## Deployed App
+
+### [https://tech-task-ip-lookup.fly.dev/swagger](https://tech-task-ip-lookup.fly.dev/swagger)
+
+## Task
 
 Implement REST API that allows users to:
 
@@ -8,6 +12,29 @@ Implement REST API that allows users to:
  - Response with a stored lookup info from DB in case the specific IP was already searched (DB-caching)
  - Remove cached result by IP
  - Cache should be auto-removed after TTL of 60 seconds, so only the cache result would be updated each 60 seconds for the particular IP address
+
+## Project Features
+
+- Clean Architecture implementation
+- REST API endpoints for IP info lookup
+- Input parameters validation
+- SQLite3 database integration
+- Swagger documentation
+- Docker containerization
+- Unit tests
+- Integration tests
+- CD to fly.io
+
+## Technologies Used
+
+- Node.js
+- TypeScript
+- NestJS
+- MikroORM
+- SQLite3
+- Docker
+- Swagger/OpenAPI
+- Jest
 
 ## Project setup
 
@@ -46,29 +73,7 @@ $ npm run test:cov
 ## Environment Variables
 
  - `IP_WHOIS_URL` - URL address to the service to get WHOIS info (defaults to `https://ipwho.is`)
- - `RECORD_TTL_SECONDS` - TTL of records cached in the DB in seconds (defaults to `60`) 
-
-## Project Features
-
- - Clean Architecture implementation
- - REST API endpoints for IP info lookup
- - Input parameters validation
- - SQLite3 database integration
- - Swagger documentation
- - Docker containerization
- - Unit tests
- - Integration tests
-
-## Technologies Used
-
- - Node.js
- - TypeScript
- - NestJS
- - MikroORM
- - SQLite3
- - Docker
- - Swagger/OpenAPI
- - Jest
+ - `RECORD_TTL_SECONDS` - TTL of records cached in the DB in seconds (defaults to `60`)
 
 ## License
 

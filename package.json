@@ -1,6 +1,6 @@
 {
   "name": "tech-task-ip-lookup",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An application that provides REST API for searching info about IP address",
   "author": "k.kulakov1@gmail.com",
   "private": true,

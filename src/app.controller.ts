@@ -6,7 +6,10 @@ import { ApiResponse, ApiTags } from '@nestjs/swagger';
 export class AppController {
   @ApiResponse({ status: 200, description: 'App health' })
   @Get('health')
-  health(): { success: true } {
-    return { success: true };
+  health(): { success: true, version: string } {
+    return {
+      success: true,
+      version: process.env.npm_package_version,
+    };
   }
 }
